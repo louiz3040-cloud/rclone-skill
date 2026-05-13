@@ -1,0 +1,26 @@
+[DEFAULT]
+# Configurações globais padrão para rclone
+# log_level = INFO
+# log_file = /var/log/rclone.log
+
+[<REMOTE_NAME>]
+type = <REMOTE_TYPE>
+# Exemplo para Google Drive:
+# type = drive
+# client_id = <YOUR_CLIENT_ID>
+# client_secret = <YOUR_CLIENT_SECRET>
+# scope = drive
+# token = {"access_token":"...","token_type":"Bearer","refresh_token":"...","expiry":"..."}
+
+# Exemplo para Amazon S3:
+# type = s3
+# provider = AWS
+# access_key_id = <YOUR_ACCESS_KEY_ID>
+# secret_access_key = <YOUR_SECRET_ACCESS_KEY>
+# region = us-east-1
+
+# Exemplo para Crypt (criptografia):
+# type = crypt
+# remote = <EXISTING_REMOTE_NAME>:<PATH_TO_ENCRYPT>
+# password = <YOUR_ENCRYPTION_PASSWORD>
+# password2 = <YOUR_ENCRYPTION_PASSWORD2>
